@@ -15,7 +15,6 @@ public class Homework {
         int[] source = {1, 2, 3, 4, 5, 6, 7};
         Iterator<Integer> intArrayIterator = new IntArrayIterator(source);
         while (intArrayIterator.hasNext()) {
-            // FIXME: 20.01.2023 Должно работать!
             System.out.println(intArrayIterator.next());
         }
     }
@@ -43,20 +42,22 @@ public class Homework {
 
         private final int[] source;
 
+        private int cursor = 0;
+
         public IntArrayIterator(int[] source) {
             this.source = source;
         }
 
         @Override
         public boolean hasNext() {
-            // FIXME: 20.01.2023 Код писать тут
-            return false;
+            return cursor <= source.length - 1 ;
         }
 
         @Override
         public Integer next() {
-            // FIXME: 20.01.2023 Код писать тут
-            return null;
+            int nextInt = source[cursor];
+            cursor++;
+            return nextInt;
         }
     }
 
