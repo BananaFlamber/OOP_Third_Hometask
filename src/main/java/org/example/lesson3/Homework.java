@@ -5,11 +5,6 @@ import java.util.*;
 public class Homework {
 
     public static void main(String[] args) {
-        // 1. Создать список объектов типа Notebook
-        // Отсортировать его тремя способами:
-        // 1.1 по ОЗУ (ram)
-        // 1.2 по цене (price)
-        // 1.3 сначала по ram, потом по price (если ram не равны, сортируем по ним; если равны, то по цене)
 
         int[] source = {1, 2, 3, 4, 5, 6, 7};
         Iterator<Integer> intArrayIterator = new IntArrayIterator(source);
